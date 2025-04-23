@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <link href="https://cdn.jsdelivr.net/gh/webfontworld/naver/NanumSquareNeo.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Greatest Life Hat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareNeo/NanumSquareNeo.css">
+
+  <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* 가로 스크롤도 방지 */
+}
+    body {
+      margin: 0;
+      font-family: 'Nanum Myeongjo', serif;
+      background: black;
+      color: white;
+      line-height: 1.6;
+      overflow-x: hidden;
+    background-image: url('TT.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+    }
+
+.reservation-text {
+  font-family: 'NanumSquareNeo', sans-serif;
+  font-size: 24px;
+  color: white;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.reservation-text .highlight {
+  color: #ffe87b;
+  font-weight: bold;
+}.target-class {
+  font-family: 'NanumSquareNeo', sans-serif;
+}
+   .logo-title-image {
+  width: 75%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+    .tagline {
+  font-family: 'NanumSquare Neo variable', sans-serif;
+  font-size: 1.6rem;
+  line-height:  2;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+.glow-logo {
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  margin: 0 auto;
+  animation: glowEffect 2s ease-in-out infinite;
+}
+
+@keyframes glowEffect {
+  0%, 100% {
+    filter: drop-shadow(0 0 0px gold) brightness(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 30px gold) brightness(1.7);
+  }
+}
+
+
+    .hero {
+      text-align: center;
+      padding: 0px 20px 50px;
+    }
+
+    .logo-title {
+      font-size: 3rem;
+      color: gold;
+      text-shadow: 0 0 10px gold;
+    }
+
+   .falling-character {
+  width: 400px;
+  max-width: 90%;
+  animation: float 4s ease-in-out infinite;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 100px; /* ✅ 여기 여백 조절 */
+}
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(20px); }
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 40px 0;
+    }
+
+    .gallery img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .quote-section {
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 60px 20px;
+      background: linear-gradient(black, #111);
+    }
+
+
+    .main-content {
+      text-align: center;
+      padding: 50px 20px;
+
+    }
+
+    .full-image {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 10px;
+    }
+
+    .poster {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .poster img {
+      width: 300px;
+    }
+
+    .footer {
+      padding: 40px 20px;
+      background: #111;
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 100px;
+      color: white;
+      font-family: 'Nanum Myeongjo', serif;
+    }
+    
+
+    .blockquote {
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    /* ⭐ 반짝이는 별 효과 추가 */
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      background: transparent;
+      pointer-events: none;
+    }
+
+    @keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.4);
+  }
+}
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite;
+    }
+.arch-gallery {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.arch-images {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+.arch-images img {
+  width: 250px;
+  height: 380px;
+  padding-top: 20px;  /* 윗부분 공간 확보 */
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 120px 120px 0 0;  /* 더 둥글게 만들기 */
+}
+
+
+.arch-images img:hover {
+  transform: scale(1.05);
+}
+.arch-caption {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  font-family: 'NanumSquare Neo variable', sans-serif;
+}
+
+.quote-en {
+  font-family: 'Nanum Myeongjo', serif;
+  font-size: 1rem;
+  color: #ccc;
+  font-style: italic;
+  margin-top: 15px;
+  line-height: 1.8;
+}
+
+.f-image {
+  width: 700px;
+  max-width: 80vw;
+  height: auto;
+  display: block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  animation: sparkleFloat 3s ease-in-out infinite;
+}
+
+@keyframes sparkleFloat {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+    filter: brightness(1);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+    filter: brightness(1.5);
+  }
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.base-image {
+  width: 100%;
+  display: block;
+}
+
+.hat-image {
+  position: absolute;
+  top: 42%; /* 조정 필요 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160px; /* 조정 가능 */
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* ✨ 반짝이며 살짝 떠오르는 애니메이션 */
+@keyframes sparkleFloat {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+    filter: brightness(1);
+  }
+  50% {
+    transform: translateX(-50%) translateY(-15px);
+    filter: brightness(1.4);
+  }
+}
+
+.sparkle-animation {
+  animation: sparkleFloat 3s ease-in-out infinite;
+}
+
+
+
+@import url('https://cdn.jsdelivr.net/gh/webfontworld/NanumSquareNeo/NanumSquareNeo.css');
+
+.quote-section {
+  color: white;
+  padding: 60px 20px;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'NanumSquareNeo', sans-serif; /* 전체 한글 폰트 적용 */
+}
+.quote-sub-en strong {
+  font-weight: 700; /* 또는 bold */
+  color: white;  
+  font-family: 'Nanum Myeongjo', serif; 
+    text-align: left; 
+    font-style: italic; /* 강조 컬러도 조절 가능 */
+}
+
+.quote-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'NanumSquareNeo', sans-serif;
+}
+
+.quote-section .quote-en {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  font-weight:300;
+  text-align: left;
+  font-family: 'Nanum Myeongjo', serif; /* 영문은 따로 유지하거나 원하면 NanumSquareNeo로 변경 */
+}
+
+.quote-kor p,
+.quote-eng p {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 12px;
+    font-weight:300;
+  text-align: left;
+  font-family: 'NanumSquareNeo', sans-serif;
+}
+
+.rotate-img {
+  display: block;
+  margin: 0 auto;
+  width: 500px;
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+}
+
+.rotate-img:hover {
+  transform: rotateY(360deg);
+
+
+}
+.footer {
+  background: #000;
+  color: white;
+  padding: 60px 5vw 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+
+.footer-logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.footer-logo img {
+  height: 50px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.footer-column h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #bbb;
+  font-size: 13px;
+}
+
+.footer-column ul li a:hover {
+  color: white;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #888;
+  margin: 50px 0 30px;
+}
+
+.footer-bottom {
+  text-align: center;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+}
+
+.social-icons img:hover {
+  opacity: 1;
+}
+
+  .full-banner img {
+      width: 100vw;       /* 화면 전체 너비 */
+      height: auto;
+      display: block;
+      margin: 0;
+      padding: 0;
+      object-fit: cover;
+  </style>
+</head>
+<body>
+  <!-- ⭐ 반짝이 별 추가 -->
+  <div class="stars">
+    <script>
+      for (let i = 0; i < 100; i++) {
+        const star = document.createElement("div");
+        star.className = "star";
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.animationDelay = `${Math.random() * 2}s`;
+        document.querySelector(".stars").appendChild(star);
+      }
+    </script>
+  </div>
+
+ <header class="hero">
+  <img src="falling-character.png" class="falling-character" alt="Falling Character" />
+  
+  <!-- 여기에 로고 이미지 삽입 -->
+ <img src="logo.png" alt="Logo" class="glow-logo" />
+
+  <p class="tagline">
+    한 번뿐인 내 인생을 주인공으로 살아볼 수 있는 모자를 판매합니다.<br>
+    이 모자를 착용함과 동시에 당신이 원하고 그리던 꿈을 이루는 삶 속으로 들어갑니다.
+  </p>
+
+  <p class="quote-en">
+    We are selling a hat that lets you live your one and only life as the main character. <br>
+    The moment you put it on, you step into the life you've always dreamed of — a life where your wishes and dreams come true.
+  </p>
+</header>
+
+
+ <section class="arch-gallery">
+  <div class="arch-images">
+    <img src="arch1.jpg" alt="scene1" />
+    <img src="arch2.jpg" alt="scene2" />
+    <img src="arch3.jpeg" alt="scene3" />
+    <img src="arch4.jpg" alt="scene4" />
+    <img src="arch5.jpeg" alt="scene5" />
+  </div>
+  <section class="quote-section">
+  <h2>“ 당신이 꿈을 이루는 그 순간을 응원합니다. 꿈을 현실로 만드세요.”</h2>
+<p class="quote-sub-en">
+  <strong>We cheer for the moment you make your dream come true. We cheer for the moment you make your dream come true.</strong>
+</p><br>
+
+  <div class="quote-kor">
+    <p>‘위대한 쇼맨’이란 영화는 주인공 P.T 바넘은 가장 유명한 서커스 공연의 단장이 되는 꿈을 이뤘습니다.</p>
+    <p>영화의 끝에선 P.T 바넘이 나이가 들어 새로운 서커스 단장에게 권한을 물려주며 자신이 항상 쓰고있던 ‘이 모자’를 건네줍니다.</p><br>
+    <p>P.T 바넘이 자신의 인생에서 꿈을 이룬 것처럼 ‘위대한 삶의 모자’를 쓰면 누구나 자기가 원하는 인생의 주인공이 될 수 있습니다. 2025년의 주인공이 되어 꿈을 이뤄보세요.</p>
+  </div>
+
+  <div class="quote-eng">
+    <p><em>In the film The Greatest Showman, the main character P.T. Barnum fulfills his dream of becoming the most renowned circus ringmaster.</em></p>
+    <p><em>At the end of the movie, an older Barnum passes the torch to a new ringmaster, handing over the very hat he always wore.</em></p><br>
+    <p><em>Just as P.T. Barnum lived out his dream, anyone who wears the “Hat of a Great Life” can become the star of their own story.</em></p>
+    <p><em>Step into 2025 as the lead role in your life—and make your dreams come true.</em></p>
+  </div>
+</section>
+
+   <div class="image-container">
+  <img src="Y.png" alt="Main Scene" class="base-image" />
+  <img src="H.png" alt="Top Hat" class="hat-image sparkle-animation" />
+</div>
+<div style="font-family: 'NanumSquareNeo', sans-serif; text-align: right; margin: 0 10vw 0 0; line-height: 1.8;">
+  <p style="font-size: 22px; color: white; margin: 0;">
+    2025년 주인공은 바로 당신이다. 
+  </p>
+  <p style="font-size: 22px; color: white; margin: 0;">
+    단. 한 번뿐인 인생 이전과는 전혀다른 삶을
+  </p>
+  <p style="
+  font-family: 'NanumSquareNeo', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffe87b;
+  text-decoration: underline;
+  text-decoration-color: #ffe87b;
+  text-underline-offset: 6px;
+">
+  지금 바로 예약하세요.
+</p>  
+<img src="YY.png" alt="YY Image" style="
+  margin-top: 40px;
+  margin-bottom: 80px;
+  margin-left: 0;
+  display: block;
+  width: 50%;
+" />
+  <div class="full-banner">    
+  <img src="P.jpeg" alt="Full Banner" />
+
+</div>
+</div>
+ <div class="poster-section" style="text-align: center; margin-top: 50px;">
+  <img src="T.png" alt="Poster" class="rotate-img" />
+  <p style="font-size: 24px; color: #fdf3c0;">COMING SOON | 2025.12.25</p>
+ <footer class="footer" style="margin-bottom: 0; padding: 40px 0; background-color: #111; text-align: center; color: white;">
+  <img src="F.png" class="f-animation f-image" alt="F Image"> 
+  <p style="margin: 10px 0 0;">제작 및 기획자: 김예빈 | akimyebin@gmail.com</p>
+</footer>
+</div>
+</footer>
+
+<footer class="footer">
+  <div class="footer-logo">
+  <img src="logo.png" alt="The Greatest Life Hat Logo">
+</div>
+
+
+  <div class="footer-grid">
+    <div class="footer-column">
+      <h4>THE GREATEST HAT 자세히 살펴보기</h4>
+      <ul>
+        <li><a href="#">서비스 배경</a></li>
+        <li><a href="#">상세설명</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>응모서 작성하기</h4>
+      <ul>
+        <li><a href="#">양식 확인하기</a></li>
+        <li><a href="#">작성하러 가기</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>GREATEST HISTORY</h4>
+      <ul>
+        <li><a href="#">1990년대</a></li>
+        <li><a href="#">2000년대</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>프로젝트 서비스</h4>
+      <ul>
+        <li><a href="#">환불</a></li>
+        <li><a href="#">취소</a></li>
+        <li><a href="#">Q&A</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="footer-bottom">
+    <div class="social-icons">
+      <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
+      <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+      <a href="#"><img src="icons/youtube.svg" alt="YouTube" /></a>
+      <a href="#"><img src="icons/kakao.svg" alt="KakaoTalk" /></a>
+    </div>
+  </div>
+</footer>
+
+<canvas id="starTrail"></canvas>
+<style>
+  #starTrail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+  }
+</style>
+<script>
+  const canvas = document.getElementById("starTrail");
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  let stars = [];
+
+  window.addEventListener("resize", () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  });
+
+  document.addEventListener("mousemove", (e) => {
+    for (let i = 0; i < 3; i++) {
+      stars.push({
+        x: e.clientX,
+        y: e.clientY,
+        size: Math.random() * 2 + 1,
+        alpha: 1,
+        dx: (Math.random() - 0.5) * 1,
+        dy: (Math.random() - 0.5) * 1
+      });
+    }
+  });
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    stars.forEach((star, index) => {
+      star.x += star.dx;
+      star.y += star.dy;
+      star.alpha -= 0.01;
+
+      if (star.alpha <= 0) stars.splice(index, 1);
+
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255, 215, 0, ${star.alpha})`; 
+      ctx.fill();
+    });
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+</body>
+</html>
